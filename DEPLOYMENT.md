@@ -14,6 +14,8 @@ This guide will help you deploy your Cigar and Smoke Shop website to production.
 
 ## Deployment Options
 
+> 📘 **Deploying to Koyeb?** See the dedicated [Koyeb Deployment Guide](./KOYEB-DEPLOYMENT.md) for memory-optimized setup instructions.
+
 ### Option 1: Vercel (Recommended - Easiest)
 
 Vercel is created by the Next.js team and provides the best experience.
