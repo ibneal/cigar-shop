@@ -1,0 +1,10 @@
+# Sitemap
+User-agent: *
+Allow: /
+
+# Disallow admin routes
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://cigarandsmokeshop.com/sitemap.xml
+

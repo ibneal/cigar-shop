@@ -1,0 +1,176 @@
+{
+  "businessInfo": {
+    "name": "Cigar and Smoke Shop",
+    "tagline": "THE BEST SMOKE SHOP AND VAPE SHOP IN THE HANOVER, JESSUP, SEVERN, AND ANNAPOLIS MARYLAND AREAS",
+    "address": {
+      "street": "7000 Arundel Mills Circle",
+      "city": "Hanover",
+      "state": "MD",
+      "zip": "21076",
+      "fullAddress": "7000 Arundel Mills Circle, Hanover, MD, 21076, United States",
+      "locationHint": "At entrance #3",
+      "nearbyLandmarks": "Across \"Book-A-Million\" and \"Sun and Ski Sports\""
+    },
+    "contact": {
+      "phone": "443-755-5141",
+      "email": "cigarandsmokeshop@gmail.com"
+    },
+    "hours": {
+      "monday": "10:00 AM - 8:00 PM",
+      "tuesday": "10:00 AM - 8:00 PM",
+      "wednesday": "10:00 AM - 8:00 PM",
+      "thursday": "10:00 AM - 8:00 PM",
+      "friday": "10:00 AM - 9:00 PM",
+      "saturday": "10:00 AM - 9:00 PM",
+      "sunday": "11:00 AM - 7:00 PM",
+      "display": "Near Books-A-Million"
+    },
+    "social": {
+      "facebook": "https://www.facebook.com/CigarandSmokeShop",
+      "instagram": "https://www.instagram.com/cigarandsmokeshop/"
+    },
+    "discount": {
+      "text": "10% DISCOUNT STOREWIDE: MILITARY - POLICE - FIRE/EMS - MALL EMPLOYEES",
+      "percentage": 5,
+      "eligibility": ["Military", "Police", "Fire/EMS", "Mall Employees"]
+    },
+    "mapCoordinates": {
+      "lat": 39.1526,
+      "lng": -76.7300
+    }
+  },
+  "featuredBrands": [
+    {
+      "id": "cohiba",
+      "name": "Cohiba",
+      "logo": "/images/brands/Cohiba-Logo.webp",
+      "order": 1
+    },
+    {
+      "id": "geek-bar",
+      "name": "Geek Bar",
+      "logo": "/images/brands/GEEK-BAR.png",
+      "order": 2
+    },
+    {
+      "id": "Xikar",
+      "name": "Xikar",
+      "logo": "/images/brands/xikar.webp",
+      "order": 3
+    },
+    {
+      "id": "juul",
+      "name": "Juul",
+      "logo": "/images/brands/juul.webp",
+      "order": 4
+    },
+    {
+      "id": "raw",
+      "name": "RAW",
+      "logo": "/images/brands/raw-logo.png",
+      "order": 5
+    },
+    {
+      "id": "Lost Mary",
+      "name": "Lost Mary",
+      "logo": "/images/brands/lost mary.png",
+      "order": 6
+    },
+    {
+      "id": "zippo",
+      "name": "Zippo",
+      "logo": "/images/brands/zippo.png",
+      "order": 7
+    },
+    {
+      "id": "colibri",
+      "name": "Colibri",
+      "logo": "/images/brands/colibri.webp",
+      "order": 8
+    },
+    {
+      "id": "star buzz",
+      "name": "Star Buzz",
+      "logo": "/images/brands/Starbuzz-Logo.webp",
+      "order": 9
+    },
+    {
+      "id": "vaporesso",
+      "name": "Vaporesso",
+      "logo": "/images/brands/vaporesso-logo.png",
+      "order": 10
+    },
+    {
+      "id": "padron",
+      "name": "Padron",
+      "logo": "/images/brands/padron.png",
+      "order": 11
+    }
+  ],
+  "productCategories": [
+    {
+      "id": "cigars",
+      "name": "Premium Cigars",
+      "slug": "cigars",
+      "description": "Cigar is our name. We provide a wide variety of cigars for a personalized smoking experience. Our store has an extensive collection of top top brands. Every cigar is stored in a specific temperature and humidity to ensure a perfect smoke every time.",
+      "image": "/images/premium_cigars.png",
+      "ctaText": "Learn More",
+      "ctaLink": "/products/cigars"
+    },
+    {
+      "id": "hookah",
+      "name": "Hookah & Shisha (Hookah Tobacco)",
+      "slug": "hookah",
+      "description": "Our Hookah selection caters to beginners and aficionados alike. You'll be sure to find exactly the right type of hookah to fit your budget and need. We also carry a wide range of shisha flavors (hookah tobacco).",
+      "image": "/images/Hookah.jpg",
+      "ctaText": "Learn More",
+      "ctaLink": "/products/hookah"
+    },
+    {
+      "id": "vaporizers",
+      "name": "Vaporizers & E-Juice",
+      "slug": "vaporizers",
+      "description": "Our vapes carries the latest vaporizers for any vaping needs! We have a variety of devices so you can find the perfect vape whether it's for liquids, herbs, or concentrates. Don't forget to ask about asking ideas for configurations collection of E-juice to find your flavor.",
+      "image": "/images/e-liquids.jpg",
+      "ctaText": "Learn More",
+      "ctaLink": "/products/vapes"
+    },
+    {
+      "id": "kratom",
+      "name": "Kratom",
+      "slug": "kratom",
+      "description": "We carry a carefully curated selection of premium kratom products sourced from reputable vendors who prioritize quality and purity. Available in various strains including Red Vein, Green Vein, White Vein, and specialty blends like Maeng Da and Bali.",
+      "image": "/images/kratom.jpg",
+      "ctaText": "Learn More",
+      "ctaLink": "/products/kratom"
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories & More",
+      "slug": "accessories",
+      "description": "Everything you need to enhance your smoking experience. From premium cigar cutters and lighters to rolling papers, glass pipes, grinders, and more. We carry top brands like Zippo, Xikar, Colibri, and RAW.",
+      "image": "/images/cigar cutters.jpg",
+      "ctaText": "Learn More",
+      "ctaLink": "/products/accessories"
+    },
+    {
+      "id": "hemp-cbd",
+      "name": "Hemp & CBD Products",
+      "slug": "hemp-cbd",
+      "description": "Explore our selection of premium CBD and hemp products including oils, edibles, topicals, and flower. All products are third-party lab tested for quality and compliance.",
+      "image": "/images/cbd-4469987.jpg",
+      "ctaText": "Learn More",
+      "ctaLink": "/products/hemp-cbd"
+    }
+  ],
+  "rewards": [
+    {
+      "id": "Loyalty Program",
+      "title": "Loyalty Program",
+      "description": "Earn points for every purchase and redeem them for discounts. Earn 10 points for joining the program at checkout and 1 point for every $1 spent.",
+      "active": true,
+      "image": null
+    }
+  ]
+}
+
