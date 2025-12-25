@@ -21,6 +21,8 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   reactStrictMode: true,
+  // Required for Docker standalone build
+  output: 'standalone',
 };
 
 export default nextConfig;
