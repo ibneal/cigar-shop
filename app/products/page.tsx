@@ -30,7 +30,7 @@ const productCategories = [
   {
     name: 'Kratom',
     href: '/products/kratom',
-    image: '/images/cbd-4469987.jpg',
+    image: '/images/kratom.jpg',
     description: 'Premium quality kratom products from trusted sources. Various strains available in powder, capsule, and extract forms.',
   },
   {

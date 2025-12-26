@@ -57,7 +57,7 @@ export default function KratomPage() {
             <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div className="relative h-80">
                 <Image
-                  src="/images/cbd-4469987.jpg"
+                  src="/images/kratom.jpg"
                   alt="Premium Kratom"
                   fill
                   className="object-cover rounded-lg"
