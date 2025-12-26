@@ -73,7 +73,7 @@
     {
       "id": "Lost Mary",
       "name": "Lost Mary",
-      "logo": "/images/brands/lost mary.png",
+      "logo": "/images/brands/lost-mary.png",
       "order": 6
     },
     {
@@ -149,7 +149,7 @@
       "name": "Accessories & More",
       "slug": "accessories",
       "description": "Everything you need to enhance your smoking experience. From premium cigar cutters and lighters to rolling papers, glass pipes, grinders, and more. We carry top brands like Zippo, Xikar, Colibri, and RAW.",
-      "image": "/images/cigar cutters.jpg",
+      "image": "/images/cigar-cutters.jpg",
       "ctaText": "Learn More",
       "ctaLink": "/products/accessories"
     },

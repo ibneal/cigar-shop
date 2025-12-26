@@ -80,7 +80,7 @@ export default function VapesPage() {
               </div>
               <div className="relative h-80">
                 <Image
-                  src="/images/vape banner.webp"
+                  src="/images/vape-banner.webp"
                   alt="Premium Vaporizers"
                   fill
                   className="object-cover rounded-lg"

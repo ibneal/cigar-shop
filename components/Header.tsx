@@ -38,7 +38,7 @@ export default function Header() {
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
             <div className="relative w-16 h-16">
               <Image
-                src="/images/Cigar and Smoke Shop logo.png"
+                src="/images/cigar-and-smoke-shop-logo.png"
                 alt="Cigar and Smoke Shop Logo"
                 fill
                 className="object-contain"

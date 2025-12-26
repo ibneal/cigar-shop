@@ -24,7 +24,7 @@ const productCategories = [
   {
     name: 'Vaporizers & E-Juice',
     href: '/products/vapes',
-    image: '/images/vape banner.webp',
+    image: '/images/vape-banner.webp',
     description: 'Discover the latest in vaping technology and premium e-liquids from Geek Bar, Lost Mary, Vaporesso, and more.',
   },
   {
@@ -36,7 +36,7 @@ const productCategories = [
   {
     name: 'Accessories',
     href: '/products/accessories',
-    image: '/images/cigar cutters.jpg',
+    image: '/images/cigar-cutters.jpg',
     description: 'Everything you need to enhance your smoking experience - lighters, cutters, humidors, rolling papers, and more.',
   },
   {

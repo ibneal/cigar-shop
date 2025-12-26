@@ -45,24 +45,24 @@ const cigarBrands = [
 ];
 
 const brandLogos = [
-  { name: "ACID", image: "/images/cigar brand logos/ACID.png", alt: "ACID Cigars" },
-  { name: "Alec Bradley", image: "/images/cigar brand logos/cigarstandard-Alec-Bradley.jpg", alt: "Alec Bradley" },
-  { name: "Arturo Fuente", image: "/images/cigar brand logos/af.png", alt: "Arturo Fuente Cigars" },
-  { name: "Ashton", image: "/images/cigar brand logos/Ashton-cigars-logo.jpg", alt: "Ashton Cigars" },
-  { name: "Avo", image: "/images/cigar brand logos/AVO_Cigars_Logo.png", alt: "Avo Cigars" },
-  { name: "CAO", image: "/images/cigar brand logos/cao-logo-cigars.png", alt: "CAO Cigars" },
-  { name: "Cohiba", image: "/images/cigar brand logos/Cohiba-Logo.webp", alt: "Cohiba Cigars" },
-  { name: "Drew Estate", image: "/images/cigar brand logos/drew estate.jpg", alt: "Drew Estate Cigars" },
-  { name: "Gurkha", image: "/images/cigar brand logos/logo-gurkha.png", alt: "Gurkha Cigars" },
-  { name: "La Gloria Cubana", image: "/images/cigar brand logos/lgc.png", alt: "La Gloria Cubana Cigars" },
-  { name: "Macanudo", image: "/images/cigar brand logos/MACANUD.png", alt: "Macanudo Cigars" },
-  { name: "Montecristo", image: "/images/cigar brand logos/Montecristo_cigar_logo.png", alt: "Montecristo Cigars" },
-  { name: "Oliva", image: "/images/cigar brand logos/oliva.png", alt: "Oliva Cigars" },
-  { name: "Padron", image: "/images/cigar brand logos/padron_logo.webp", alt: "Padron Cigars" },
-  { name: "Perdomo", image: "/images/cigar brand logos/logo-perdomo.gif", alt: "Perdomo Cigars" },
-  { name: "Rocky Patel", image: "/images/cigar brand logos/rp.png", alt: "Rocky Patel Cigars" },
-  { name: "Romeo y Julieta", image: "/images/cigar brand logos/romeo-y-julieta.png", alt: "Romeo y Julieta Cigars" },
-  { name: "Tatiana", image: "/images/cigar brand logos/Tatiana.gif", alt: "Tatiana Cigars" },
+  { name: "ACID", image: "/images/cigar-brand-logos/ACID.png", alt: "ACID Cigars" },
+  { name: "Alec Bradley", image: "/images/cigar-brand-logos/cigarstandard-Alec-Bradley.jpg", alt: "Alec Bradley" },
+  { name: "Arturo Fuente", image: "/images/cigar-brand-logos/af.png", alt: "Arturo Fuente Cigars" },
+  { name: "Ashton", image: "/images/cigar-brand-logos/Ashton-cigars-logo.jpg", alt: "Ashton Cigars" },
+  { name: "Avo", image: "/images/cigar-brand-logos/AVO_Cigars_Logo.png", alt: "Avo Cigars" },
+  { name: "CAO", image: "/images/cigar-brand-logos/cao-logo-cigars.png", alt: "CAO Cigars" },
+  { name: "Cohiba", image: "/images/cigar-brand-logos/Cohiba-Logo.webp", alt: "Cohiba Cigars" },
+  { name: "Drew Estate", image: "/images/cigar-brand-logos/drew-estate.jpg", alt: "Drew Estate Cigars" },
+  { name: "Gurkha", image: "/images/cigar-brand-logos/logo-gurkha.png", alt: "Gurkha Cigars" },
+  { name: "La Gloria Cubana", image: "/images/cigar-brand-logos/lgc.png", alt: "La Gloria Cubana Cigars" },
+  { name: "Macanudo", image: "/images/cigar-brand-logos/MACANUD.png", alt: "Macanudo Cigars" },
+  { name: "Montecristo", image: "/images/cigar-brand-logos/Montecristo_cigar_logo.png", alt: "Montecristo Cigars" },
+  { name: "Oliva", image: "/images/cigar-brand-logos/oliva.png", alt: "Oliva Cigars" },
+  { name: "Padron", image: "/images/cigar-brand-logos/padron_logo.webp", alt: "Padron Cigars" },
+  { name: "Perdomo", image: "/images/cigar-brand-logos/logo-perdomo.gif", alt: "Perdomo Cigars" },
+  { name: "Rocky Patel", image: "/images/cigar-brand-logos/rp.png", alt: "Rocky Patel Cigars" },
+  { name: "Romeo y Julieta", image: "/images/cigar-brand-logos/romeo-y-julieta.png", alt: "Romeo y Julieta Cigars" },
+  { name: "Tatiana", image: "/images/cigar-brand-logos/Tatiana.gif", alt: "Tatiana Cigars" },
 ];
 
 export default function CigarsPage() {
@@ -175,7 +175,7 @@ export default function CigarsPage() {
             <div className="grid md:grid-cols-2 gap-8 items-start mb-12">
               <div className="relative h-80">
                 <Image
-                  src="/images/history rolling.jpg"
+                  src="/images/history-rolling.jpg"
                   alt="Cigar History"
                   fill
                   className="object-cover rounded-lg"

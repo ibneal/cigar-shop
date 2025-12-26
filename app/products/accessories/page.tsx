@@ -36,7 +36,7 @@ export default function AccessoriesPage() {
               <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div className="relative h-80">
                   <Image
-                    src="/images/cigar cutters.jpg"
+                    src="/images/cigar-cutters.jpg"
                     alt="Cigar Accessories"
                     fill
                     className="object-cover rounded-lg"
@@ -94,7 +94,7 @@ export default function AccessoriesPage() {
               <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div className="relative h-80">
                   <Image
-                    src="/images/blog raw papers.jpg"
+                    src="/images/blog-raw-papers.jpg"
                     alt="Rolling Papers"
                     fill
                     className="object-cover rounded-lg"
