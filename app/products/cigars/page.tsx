@@ -121,18 +121,18 @@ export default function CigarsPage() {
             </div>
 
             {/* Brand Logo Carousel */}
-            <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white p-12 rounded-lg mb-12 overflow-hidden">
+            <div className="relative bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white p-4 md:p-8 lg:p-12 rounded-lg mb-12 overflow-hidden">
               <div className="absolute inset-0 opacity-10 bg-[url('/images/premium_cigars.jpg')] bg-cover bg-center"></div>
               <div className="relative flex items-center justify-between max-w-4xl mx-auto">
                 <button 
                   onClick={prevLogo}
-                  className="text-4xl hover:text-amber-400 transition-colors duration-200 p-4 hover:bg-white/10 rounded-full z-10"
+                  className="text-2xl md:text-3xl lg:text-4xl hover:text-amber-400 transition-colors duration-200 p-2 md:p-3 lg:p-4 hover:bg-white/10 rounded-full z-10 flex-shrink-0"
                   aria-label="Previous brand"
                 >
                   ‹
                 </button>
-                <div className="flex-1 flex flex-col items-center justify-center px-8">
-                  <div className="relative w-full max-w-md h-48 mb-4 flex items-center justify-center">
+                <div className="flex-1 flex flex-col items-center justify-center px-2 md:px-4 lg:px-8">
+                  <div className="relative w-full max-w-[200px] sm:max-w-[280px] md:max-w-md h-32 sm:h-40 md:h-48 mb-3 md:mb-4 flex items-center justify-center">
                     <Image
                       src={brandLogos[currentLogoIndex].image}
                       alt={brandLogos[currentLogoIndex].alt}
@@ -142,17 +142,17 @@ export default function CigarsPage() {
                     />
                   </div>
                   <div className="text-center">
-                    <h3 className="text-2xl font-bold tracking-wider text-amber-400 mb-2">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold tracking-wider text-amber-400 mb-2">
                       {brandLogos[currentLogoIndex].name}
                     </h3>
-                    <div className="flex gap-2 justify-center">
+                    <div className="flex gap-1.5 md:gap-2 justify-center flex-wrap">
                       {brandLogos.map((_, index) => (
                         <button
                           key={index}
                           onClick={() => setCurrentLogoIndex(index)}
-                          className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full transition-all duration-300 ${
                             index === currentLogoIndex 
-                              ? 'bg-amber-400 w-8' 
+                              ? 'bg-amber-400 w-6 md:w-8' 
                               : 'bg-gray-600 hover:bg-gray-400'
                           }`}
                           aria-label={`Go to brand ${index + 1}`}
@@ -163,7 +163,7 @@ export default function CigarsPage() {
                 </div>
                 <button 
                   onClick={nextLogo}
-                  className="text-4xl hover:text-amber-400 transition-colors duration-200 p-4 hover:bg-white/10 rounded-full z-10"
+                  className="text-2xl md:text-3xl lg:text-4xl hover:text-amber-400 transition-colors duration-200 p-2 md:p-3 lg:p-4 hover:bg-white/10 rounded-full z-10 flex-shrink-0"
                   aria-label="Next brand"
                 >
                   ›
