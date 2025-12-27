@@ -22,6 +22,20 @@ export const metadata: Metadata = {
     siteName: "Cigar and Smoke Shop",
     title: "Cigar and Smoke Shop | Best Smoke Shop & Vape Shop in Maryland",
     description: "The best smoke shop and vape shop in Maryland. Premium cigars, vaporizers, e-juice, hookah, and more.",
+    images: [
+      {
+        url: "https://cigarandsmokeshop.com/images/cigar-and-smoke-shop-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Cigar and Smoke Shop Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cigar and Smoke Shop | Best Smoke Shop & Vape Shop in Maryland",
+    description: "The best smoke shop and vape shop in Maryland. Premium cigars, vaporizers, e-juice, hookah, and more.",
+    images: ["https://cigarandsmokeshop.com/images/cigar-and-smoke-shop-logo.png"],
   },
 };
 
@@ -40,7 +54,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Store",
               "name": siteConfig.businessInfo.name,
-              "image": "https://cigarandsmokeshop.com/images/logo.png",
+              "image": "https://cigarandsmokeshop.com/images/cigar-and-smoke-shop-logo.png",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": siteConfig.businessInfo.address.street,
