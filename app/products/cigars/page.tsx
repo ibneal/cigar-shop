@@ -195,16 +195,16 @@ export default function CigarsPage() {
               <div>
                 <h3 className="text-2xl font-bold mb-4 uppercase tracking-wide">History</h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Tobacco has a long history, that of the curing and rolling 
-                  process for cieans quality cigars and tobacco products hasn't changed much. Creating the perfect 
+                  Tobacco has a long history, and the curing and rolling 
+                  process for creating quality cigars and tobacco products hasn't changed much. Creating the perfect 
                   cigar involves patience and a dedication to preserve tradition and 
-                  sustain the ancient techniques. We carry more different types of cigars for different tastes.
+                  sustain the ancient techniques. We carry many different types of cigars for different tastes.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  There's a better, long way to enjoy tobacco!
+                  There's a better way to enjoy tobacco!
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4">
-                  Learn more about their cigars, our bundle, the efficient 
+                  Learn more about cigars, bundles, the efficient 
                   composition of a cigar, types of wrappers, and sizing.
                 </p>
               </div>
@@ -221,8 +221,8 @@ export default function CigarsPage() {
                     The process starts with <span className="font-semibold">growing and harvesting tobacco leaves</span>. Once they have 
                     grown to maturity, the stalks are cut and moved to a barn to be 
                     <span className="font-semibold"> cured</span>. The curing process takes anywhere from a couple weeks to several months until 
-                    the proper texture, color, taste, aroma, and moisture develope. The 
-                    curing process is crucial because it gives each type of tobacco it's distinct characteristics.
+                    the proper texture, color, taste, aroma, and moisture develop. The 
+                    curing process is crucial because it gives each type of tobacco its distinct characteristics.
                   </p>
                   <p>
                     Once the leaves are cured they are <span className="font-semibold">sorted</span> to have different parts of the cigar, 
@@ -254,20 +254,19 @@ export default function CigarsPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-2">2. Oscuro</h4>
-                  <p>These wrappers are aged for the longest out of all unique leaves. The long aging 
-                  process gives these wrappers a <span className="font-semibold">dark, sweet coloring</span> and a <span className="font-semibold">sweet flavor</span> from the binder 
+                  <p>These wrappers are aged for the longest out of all the leaves. The long aging 
+                  process gives these wrappers a <span className="font-semibold">dark coloring</span> and a <span className="font-semibold">sweet flavor</span>, allowing the binder 
                   and filler to come through.</p>
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-2">3. Congo</h4>
-                  <p>Defined by its <span className="font-semibold">spicy flavor profile</span> and brown coloring. Though it's not prominent 
-                  and is grown on the island of Sumatra.</p>
+                  <p>Defined by its <span className="font-semibold">spicy flavor profile</span> and brown coloring. Though it's not as prominent, 
+                  it's grown on the island of Sumatra and offers a unique taste.</p>
                 </div>
                 <div>
                   <h4 className="font-bold text-lg mb-2">4. Sumatra</h4>
-                  <p>They come either after grown on the island of Sumatra. There leaves are grown on the island 
-                  of Sumatra and filler. The leaf itself is thinner from the binder and is <span className="font-semibold">earthly-spicy flavoring</span> look being wraps in 
-                  Cuban red.</p>
+                  <p>These leaves are grown on the island of Sumatra. The leaf itself is thinner than typical binder 
+                  tobacco and has an <span className="font-semibold">earthy-spicy flavoring</span>, with a distinctive reddish-brown appearance.</p>
                 </div>
               </div>
             </div>

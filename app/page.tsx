@@ -134,8 +134,8 @@ export default function Home() {
               <p className="text-lg leading-relaxed">
                 Everything you want in a smoke shop or vape shop you can find here, we're 
                 conveniently located inside <span className="font-semibold">Arundel Mills mall</span> right next 
-                to Maryland Live! Casino. Our knowledgeable staff can you help 
-                you find the best vaping, smoking, or vaping experience meanwhile. Come in and 
+                to Maryland Live! Casino. Our knowledgeable staff can help 
+                you find the best smoking or vaping experience. Come in and 
                 check out what we have to offer!
               </p>
             </div>
