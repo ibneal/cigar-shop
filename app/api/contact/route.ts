@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
 // Rate limiting store (in production, use Redis or similar)
 const rateLimit = new Map<string, { count: number; resetTime: number }>();
@@ -61,13 +62,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // In production, you would send an email here using a service like:
-    // - Resend (resend.com)
-    // - SendGrid
-    // - AWS SES
-    // - Nodemailer with SMTP
-    
-    // For now, log the submission
+    // Log the submission for debugging
     console.log('Contact form submission:', {
       firstName,
       lastName,
@@ -77,21 +72,63 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     });
 
-    // TODO: Replace with actual email sending logic
-    // Example with Resend:
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: 'contact@cigarandsmokeshop.com',
-    //   to: 'cigarandsmokeshop@gmail.com',
-    //   subject: `Contact Form: ${subject}`,
-    //   html: `
-    //     <h2>New Contact Form Submission</h2>
-    //     <p><strong>From:</strong> ${firstName} ${lastName} (${email})</p>
-    //     <p><strong>Subject:</strong> ${subject}</p>
-    //     <p><strong>Message:</strong></p>
-    //     <p>${message}</p>
-    //   `,
-    // });
+    // Check if email is configured
+    if (!process.env.RESEND_API_KEY) {
+      console.error('⚠️  RESEND_API_KEY is not configured. Email will not be sent.');
+      console.log('📧 Contact form data (not sent via email):');
+      console.log('   From:', `${firstName} ${lastName} <${email}>`);
+      console.log('   Subject:', subject);
+      console.log('   Message:', message);
+      console.log('\n👉 To enable email sending, add RESEND_API_KEY to your .env.local file');
+      
+      return NextResponse.json(
+        { 
+          error: 'Email service not configured. Your message was logged but not sent. Please call us directly.' 
+        },
+        { status: 503 }
+      );
+    }
+
+    // Send email using Resend
+    try {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      
+      await resend.emails.send({
+        from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
+        to: process.env.RESEND_TO_EMAIL || 'nealbhalodia@gmail.com',
+        replyTo: email, // Customer's email for easy reply
+        subject: `Contact Form: ${subject}`,
+        html: `
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: #333; border-bottom: 2px solid #000; padding-bottom: 10px;">
+              New Contact Form Submission
+            </h2>
+            <div style="margin: 20px 0;">
+              <p style="margin: 10px 0;"><strong>From:</strong> ${firstName} ${lastName}</p>
+              <p style="margin: 10px 0;"><strong>Email:</strong> 
+                <a href="mailto:${email}">${email}</a>
+              </p>
+              <p style="margin: 10px 0;"><strong>Subject:</strong> ${subject}</p>
+            </div>
+            <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin: 20px 0;">
+              <p style="margin: 0;"><strong>Message:</strong></p>
+              <p style="margin: 10px 0; white-space: pre-wrap;">${message}</p>
+            </div>
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 12px; color: #666;">
+              <p>Sent from your website contact form on ${new Date().toLocaleString()}</p>
+            </div>
+          </div>
+        `,
+      });
+      
+      console.log('✅ Email sent successfully to:', process.env.RESEND_TO_EMAIL);
+    } catch (emailError: any) {
+      console.error('❌ Failed to send email:', emailError);
+      return NextResponse.json(
+        { error: emailError?.message || 'Failed to send email. Please try again or contact us directly.' },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
       { success: true, message: 'Message sent successfully' },
