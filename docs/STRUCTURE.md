@@ -18,7 +18,6 @@ cigar-shop/
 │   │   └── page.tsx             # Products page
 │   ├── shop/
 │   │   └── page.tsx             # Shop page
-│   ├── favicon.ico              # Site favicon
 │   ├── globals.css              # Global styles
 │   ├── layout.tsx               # Root layout (Header/Footer)
 │   ├── manifest.json            # PWA manifest

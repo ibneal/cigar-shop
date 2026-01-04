@@ -15,6 +15,15 @@ export const metadata: Metadata = {
   description: "The best smoke shop and vape shop in Maryland. Premium cigars, vaporizers, e-juice, hookah, and more. Located at Arundel Mills Mall, Hanover, MD.",
   keywords: ["cigar shop", "smoke shop", "vape shop", "hookah", "Maryland", "Hanover", "Arundel Mills"],
   authors: [{ name: "Cigar and Smoke Shop" }],
+  icons: {
+    icon: [
+      { url: "/favicon-16x16.ico", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.ico", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-192x192.ico", sizes: "192x192", type: "image/png" }
+    ],
+    shortcut: "/favicon-32x32.ico",
+    apple: { url: "/favicon-192x192.ico", sizes: "192x192", type: "image/png" },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
