@@ -12,7 +12,7 @@ const productCategories = [
   {
     name: 'Cigars',
     href: '/products/cigars',
-    image: '/images/premium_cigars.jpg',
+    image: '/images/premium_cigars.png',
     description: 'Premium selection of finely crafted cigars from top brands like Cohiba, Arturo Fuente, Padron, and more.',
   },
   {
