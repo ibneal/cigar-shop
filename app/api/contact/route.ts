@@ -96,7 +96,7 @@ export async function POST(request: NextRequest) {
       await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
         to: process.env.RESEND_TO_EMAIL || 'nealbhalodia@gmail.com',
-        replyTo: email, // Customer's email for easy reply
+        reply_to: email, // Customer's email for easy reply
         subject: `Contact Form: ${subject}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
